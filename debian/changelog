@@ -1,5 +1,66 @@
-template-repository (1.0-1) unstable; urgency=medium
+xorgxrdp (1:0.9.19-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream version.
+    + Refresh patches.
+  * Bump Standards-Version to 4.6.2; no changes needed.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Dominik George <natureshadow@debian.org>  Tue, 20 Dec 2022 11:37:46 +0100
+
+xorgxrdp (1:0.2.18-1) unstable; urgency=medium
+
+  * New upstream version.
+    * Refresh patches.
+    * Removed unused lintian override.
+
+ -- Dominik George <natureshadow@debian.org>  Fri, 01 Apr 2022 12:50:52 +0200
+
+xorgxrdp (1:0.2.17-1) unstable; urgency=medium
+
+  * New upstream version.
+    + Refresh patches.
+    + Require xrdp >= 0.9.16.
+  * Bump Standards-Version to 4.6.0 (no changes needed).
+  * Fix duplicate entry in d/copyright.
+  * Remove lintian override no-upstream-changelog.
+
+ -- Dominik George <natureshadow@debian.org>  Wed, 29 Sep 2021 16:13:07 +0200
+
+xorgxrdp (1:0.2.15-1) unstable; urgency=medium
+
+  * New upstream version.
+    + Depends on xrdp >= 0.9.14.
+  * Bump Standards-Version.
+    + No changes needed.
+
+ -- Dominik George <natureshadow@debian.org>  Mon, 01 Mar 2021 22:53:56 +0100
+
+xorgxrdp (1:0.2.12-1) unstable; urgency=low
+
+  * New upstream version
+  * Bump Policy & debhelper
+  * Remove .la and unused .a from the binary packages
+  * Add one autopkgtest matching upstream test xorg-test-run
+
+ -- Thorsten Glaser <tg@mirbsd.de>  Sat, 11 Jan 2020 01:14:23 +0100
+
+xorgxrdp (1:0.2.9-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Bump Standards-Version, no changes needed.
+
+ -- Dominik George <natureshadow@debian.org>  Sun, 13 Jan 2019 13:31:28 +0100
+
+xorgxrdp (1:0.2.8-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Bump Standards-Version to 4.2.1.
+    + No changes needed.
+  * Refresh patches.
+
+ -- Dominik George <natureshadow@debian.org>  Wed, 26 Sep 2018 22:57:56 +0200
+
+xorgxrdp (1:0.2.6-1) unstable; urgency=medium
+
+  * Split package from xrdp source.
+
+ -- Dominik George <natureshadow@debian.org>  Sat, 31 Mar 2018 18:44:01 +0200
