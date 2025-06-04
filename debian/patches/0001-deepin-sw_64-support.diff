@@ -1,0 +1,13 @@
+diff --git a/module/rdpMisc.h b/module/rdpMisc.h
+index 395f83d..d785e78 100644
+--- a/module/rdpMisc.h
++++ b/module/rdpMisc.h
+@@ -118,7 +118,7 @@ g_hexdump(const void *p, long len);
+ /* check if we need to align data */
+ #if defined(__sparc__) || defined(__alpha__) || defined(__hppa__) || \
+     defined(__AIX__) || defined(__PPC__) || defined(__mips__) || \
+-    defined(__ia64__) || defined(__ppc__) || defined(__arm__)
++    defined(__ia64__) || defined(__ppc__) || defined(__arm__) || defined (__sw_64__)
+ #define NEED_ALIGN
+ #endif
+ 

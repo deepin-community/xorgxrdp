@@ -1,3 +1,9 @@
+xorgxrdp (1:0.9.19-1deepin1) unstable; urgency=medium
+
+  * feat: add sw64 support.
+
+ -- hudeng <hudeng@deepin.org>  Wed, 04 Jun 2025 18:19:26 +0800
+
 xorgxrdp (1:0.9.19-1) unstable; urgency=medium
 
   * New upstream version.
