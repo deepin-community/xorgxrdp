@@ -1,0 +1,30 @@
+From: hudeng <hudeng@deepin.org>
+Subject: Add sw64 architecture support
+
+The sw64 (Sunway) architecture requires explicit handling for data alignment
+in certain memory operations. Without this support, the software may experience
+alignment-related issues or crashes on sw64 systems.
+
+This patch adds __sw_64__ to the list of architectures that require the NEED_ALIGN
+definition, ensuring proper memory alignment behavior on Sunway sw64 platforms.
+
+Signed-off-by: hudeng <hudeng@deepin.org>
+---
+ module/rdpMisc.h | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/module/rdpMisc.h b/module/rdpMisc.h
+index 2ca9057..79cd158 100644
+--- a/module/rdpMisc.h
++++ b/module/rdpMisc.h
+@@ -126,7 +126,7 @@ g_free_unmap_fd(void *addr, int fd, size_t size);
+ /* check if we need to align data */
+ #if defined(__sparc__) || defined(__alpha__) || defined(__hppa__) || \
+     defined(__AIX__) || defined(__PPC__) || defined(__mips__) || \
+-    defined(__ia64__) || defined(__ppc__) || defined(__arm__)
++    defined(__ia64__) || defined(__ppc__) || defined(__arm__) || defined(__sw_64__)
+ #define NEED_ALIGN
+ #endif
+
+--
+2.43.0
