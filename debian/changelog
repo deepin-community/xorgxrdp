@@ -1,3 +1,12 @@
+xorgxrdp (1:0.10.2-1deepin1) unstable; urgency=medium
+
+  * Add sw64 architecture support
+    - Add __sw64__ to module/rdpMisc.h NEED_ALIGN condition
+    - The sw64 architecture requires explicit data alignment handling
+    - Fixes potential alignment issues on Sunway sw64 platforms
+
+ -- hudeng <hudeng@deepin.org>  Wed, 04 Jun 2025 18:19:55 +0800
+
 xorgxrdp (1:0.10.2-1) unstable; urgency=medium
 
   * New upstream version.
