@@ -31,11 +31,13 @@ capture
 
 /* maximum rects in the dirty region before the extents is used */
 #define MAX_CAPTURE_RECTS 15
-#define MAX_CAPTURE_PIXELS 0x800000
 
 extern _X_EXPORT Bool
 rdpCapture(rdpClientCon *clientCon, RegionPtr in_reg, BoxPtr *out_rects,
            int *num_out_rects, struct image_data *id);
+
+extern _X_EXPORT void
+rdpCaptureResetState(rdpClientCon *clientCon);
 
 extern _X_EXPORT int
 a8r8g8b8_to_a8b8g8r8_box(const uint8_t *s8, int src_stride,
