@@ -199,6 +199,7 @@ License: Expat
 Files: debian/*
 Copyright: Dominik George <nik@naturalnet.de>
  Thorsten Glaser <tg@mirbsd.org>
+ Alex Myczko <tar@debian.org>
 License: MirOS
 
 Files: Makefile.in

@@ -7,9 +7,11 @@ Subject: Fix permissions between xrdp and sesman.
 Forwarded: https://github.com/neutrinolabs/xorgxrdp/pull/16
  https://github.com/neutrinolabs/xrdp/pull/464
 
---- a/module/rdpClientCon.c
-+++ b/module/rdpClientCon.c
-@@ -1366,7 +1366,7 @@
+Index: xorgxrdp-0.10.0/module/rdpClientCon.c
+===================================================================
+--- xorgxrdp-0.10.0.orig/module/rdpClientCon.c
++++ xorgxrdp-0.10.0/module/rdpClientCon.c
+@@ -1552,7 +1552,7 @@ rdpClientConInit(rdpPtr dev)
                  return 0;
              }
          }
